@@ -1,0 +1,110 @@
+body{
+	background-color: #f9f9f9;
+
+}
+.container{
+	width: 70.71%;	
+	margin: auto;
+	padding: 47px;
+	background-color: #fff;
+	box-shadow:         0 5px 5px  rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.3);
+	-moz-box-shadow:    0 5px 5px  rgba(0, 0, 0, 0.3);
+	font-family: "OpenSansRegular", sans-serif;
+}
+.menu {
+	height: 40px;
+	margin: 40px 0 40px;	
+	background: linear-gradient(to top, #444343 0%, #5e5e5e 100%);
+}
+.menu li{
+	display: inline-block;	
+}
+.menu li a{
+	display: block;	
+	padding: 5px 25px;
+	margin: 0 40px 0 0;
+	border-left: 1px solid rgba(255, 255, 255, 0);
+	border-right: 1px solid rgba(255, 255, 255, 0);
+	line-height: 30px;	
+	text-decoration: none;	
+	color: white;
+	text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.5);
+}
+.menu li a:hover{
+	background: linear-gradient(to top, #2e2e2e 0%, #4a4a4a 100%);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+}
+.sidebar{
+	width: 238px;
+	margin:0 48px 0 0 ;
+	float: left;
+	border: 1px solid #c8c8c8;
+}
+.sidebar li{
+	border-top: 1px solid #c8c8c8;
+}
+.sidebar li:first-child{
+	border-top: none;	
+}
+.sidebar li a{
+	display: block;	
+	padding-left: 21px;	
+	font-size: 13px;
+	line-height: 37px;
+	color: #656363;
+	text-decoration: none;
+}
+.sidebar li a:hover{
+	padding-left: 35px;
+	background-color: #f9f9f9;
+	color: #2c2c2c;
+}
+.content{
+	width: 665px;
+	overflow: hidden;
+}
+.content-img{
+	border: 1px solid #c8c8c8;
+}
+.content-img img{
+	display: block;
+	margin: 47px auto;
+}
+.content-text{
+	padding: 20px 25px;
+	line-height: 21px;
+	font-size: 13px;
+	color: #2c2c2c;
+}
+footer{
+	margin: 35px 0 0 0;
+	height: 40px;
+	background: #e1e1e1;
+}
+.footer_menu{
+	float: left;
+}
+.footer_menu li{
+	display: inline-block;	
+}
+.footer_menu li a{
+	display: block;	
+	padding: 5px 25px;
+	margin: 0 40px 0 0;
+	line-height: 30px;	
+	text-decoration: none;
+	font-size: 13px;	
+	color: #2c2c2c;
+}
+.footer_menu li a:hover{
+	text-decoration: underline;
+}
+footer p{
+	line-height: 30px;
+	font-size: 13px;	
+	color: #2c2c2c;
+	text-align: right;
+	padding: 5px 25px;
+}
