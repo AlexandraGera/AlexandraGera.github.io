@@ -36,8 +36,8 @@ body{
 	border-right: 1px solid #838383;
 }
 .sidebar{
-	width: 238px;
-	margin:0 48px 0 0 ;
+	width: 24.95%;
+	margin:0 5% 0 0 ;
 	float: left;
 	border: 1px solid #c8c8c8;
 }
@@ -61,13 +61,14 @@ body{
 	color: #2c2c2c;
 }
 .content{
-	width: 665px;
+	width: 69.71%;
 	overflow: hidden;
 }
 .content-img{
 	border: 1px solid #c8c8c8;
 }
 .content-img img{
+	max-width: 100%;
 	display: block;
 	margin: 47px auto;
 }
@@ -100,10 +101,8 @@ footer{
 .footer_menu li a:hover{
 	text-decoration: underline;
 }
-footer p{
-	line-height: 30px;
+footer li:last-child{
 	font-size: 13px;	
 	color: #2c2c2c;
-	text-align: right;
-	padding: 5px 25px;
+	padding: 0 25px 5px 191px;
 }
