@@ -27,6 +27,13 @@ header{
 	float: right;	
 	font-size: 12px;
 }
+.contacts p{
+	margin-bottom: 5px;	
+	opacity: 0.8;
+}
+.contacts p:first-child{
+	font-weight: 600;
+}
 .header-menu{
 	position: relative;
 	top: 96px;
@@ -40,6 +47,7 @@ header{
 	text-align: center;
 }
 .header-menu a{
+	color: #128aa7;
 	text-align: center;
 }
 .header-menu a:hover{
@@ -135,6 +143,7 @@ header{
 footer{
 	padding: 8px 0;
 	margin: auto;
+	opacity: 0.8;
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
