@@ -1,0 +1,91 @@
+body{
+	background-color: #ddd;
+}
+.wrapper{
+	width: 500px;
+	height: 540px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -270px 0 0 -250px;
+	background-color: #fff;	
+	border: 1px solid #000;
+}
+table{
+	border-collapse: collapse;
+	border:none;
+}
+tr,
+td{
+	margin: 0;	
+	padding: 0;
+	border: 10px solid #000;
+}
+.row{
+	border-left:none;
+	border-right:none;
+}
+.row1{
+	height: 53px;
+	border-top: none;	
+}
+.row2,
+.row3{
+	height: 140px;
+}
+.row4{
+	height: 70px;
+}
+.row5{
+	height: 62px;
+	border-bottom: none;
+}
+.row6{
+	height: 40px;
+	border-bottom: none;
+}
+.row7{
+	height: 35px;
+	border-bottom: none;
+}
+.row td:first-child{
+	width: 51px;
+	border-left: none;	
+}
+.row td:nth-child(2),
+.row td:nth-child(3){
+	width: 70px;
+}
+.row td:nth-child(4){
+	width: 137px;
+}
+.row td:nth-child(5){
+	width: 87px;
+}
+.row td:last-child{
+	width: 80px;
+	border-right: none;	
+}
+.row1>td{
+	border-top: none;
+}
+.row7>td{
+	border-bottom: none;
+}
+.row6 td:first-child,
+.row5 td:first-child{
+	border-bottom: none;
+}
+.yellow{
+	background-color: #ffef5a;	
+}
+.red{
+	background-color: #ff5737;
+}
+.blue{
+	background-color: #0f4c8b;
+}
+.black{
+	background-color: #000;
+	opacity:0.98;
+}

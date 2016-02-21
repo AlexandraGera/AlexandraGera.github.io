@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'Helvetica Neue light';
+    src: url('../fonts/helveticaneuecyr_light/helveticaneuecyr_light.eot');
+    src: url('../fonts/helveticaneuecyr_light/helveticaneuecyr_light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr_light/helveticaneuecyr_light.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr_light/helveticaneuecyr_light.woff') format('woff'),
+         url('../fonts/helveticaneuecyr_light/helveticaneuecyr_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,168 @@
+body{
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	font-family: "Helvetica Neue light", Tahoma;
+	font-size: 14px;
+}	
+/*Header*/
+header{
+	height: 37px;
+	padding: 0 20px;
+	background-color: #085a9e;
+	background-image: url(../img/noise.png);
+}
+header ul{
+	float: right;
+	overflow: hidden;
+}
+header li{
+	display: inline-block;
+	line-height: 31px;
+}
+header li a{
+	display: block;
+	padding: 0 12px;
+	color: #60b5ed;
+	text-decoration: none;
+}
+header li a:hover{
+	background: #4eabda;
+	line-height: 37px;
+	color: #fff;
+}
+header li:nth-child(5){
+	border-right: 1px solid #56a2dc;
+}
+header li a>img{
+	padding: 0 10px 0 0;
+	position: relative;
+	top: 6px;
+}
+header li:nth-child(6) a{
+	color: #fff;
+}
+header li:last-child{
+	background: #51b1dc linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.09) 20%, rgba(255, 255, 255, 0.09) 100%);
+	border: 1px solid #489bd5;
+	line-height: 35px;
+}
+header li:last-child a{
+	color: #fff;
+}
+header li:last-child a span{
+	text-decoration: underline;
+}
+header li:last-child a:hover{
+	line-height: 35px;
+}
+/*Registration form*/
+.registration{ 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -269px 0 0 -280px;
+	height: 612px;
+	width: 560px;
+}
+.reg_head{
+	height: 62px;
+	margin: 0 0 2px;
+	background-color: rgba(0,0,0,0.63);
+	color: #fff;	
+	font-size: 24px;	
+	text-align: center;
+	line-height: 62px;
+}
+.reg_form{
+	height: 549px;
+	background-color: rgba(0,0,0,0.63);
+}
+.reg_form a>img{
+	display: block;
+	margin: auto;
+	padding: 36px 0 32px;
+}
+.reg_form p{
+	color: #999;	
+	text-align: center;
+}
+.line_all{
+	width: 310px;
+	margin: 0 auto;
+	position: relative;
+	bottom: 10px;
+}
+.line{
+	display: inline-block;
+	width: 123px;	
+	height: 1px;
+	margin: 2px 15px 0 15px ;
+	background-color: #666;
+	border-bottom: 1px solid #000;
+}
+form{
+	height: 346px;
+	width: 292px;
+	margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+	height: 35px;
+	width: 256px;
+	margin: 0 auto 13px;
+	display: block;
+	padding: 0 0 0 20px;
+	background-color: #0f0e0e;
+	border: none;
+	border-bottom: 1px solid #4a4a48;
+	color: #fff;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+	color: #ccc;
+	font-family:"Helvetica Neue light", Tahoma;
+	line-height: 16px;
+	font-size: 14px;
+}
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder { 
+	color: #ccc;
+	font-family: "Helvetica Neue light", Tahoma;
+	line-height: 16px;
+	font-size: 14px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+	border-bottom: 1px solid #699ccd;
+	outline: none; 
+	background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+	box-shadow: inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1), 0 0 20px rgba(68, 127, 170, 0.77);
+}
+label{
+	padding: 0 0 0 6px;
+	color:#ccc;
+}
+button{
+	display: block;
+	width: 151px;
+	height: 37px;	
+	margin: 20px auto;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.09) 0%, rgba(0, 0, 0, 0.09) 20%, rgba(255, 255, 255, 0.09) 100%);
+	background-color: #4299d2;
+	border: 1px solid #4299d2;
+	border-radius:2px;
+	color: #fff;
+	font-size: 14px;
+}
+.privacy{
+	padding: 0 0 21px 0;
+	font-size: 11px;
+}
