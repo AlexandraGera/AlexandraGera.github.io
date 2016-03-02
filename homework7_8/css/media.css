@@ -527,13 +527,16 @@
 		font-size: 58px;
 	}
 	.info_sub {
-		font-size: 32px;
+		width: 420px;
 		padding: 22px 0 10px;
+		height: 18px;
+		font-size: 32px;
 	}
 	.info_main {
 		width: 501px;
 		height: 145px;
 		letter-spacing: 0.5px;
+		padding-top: 6px;
 	}
 	.item_info {
 		margin: 0 0 0 12px;
@@ -614,6 +617,7 @@
 	.slider--opinion .info_sub {
 		display: inline-block;
 		font-size: 31px;
+		height: 22px;
 	}
 	.slider--opinion .info_main {
 		width: 349px;
