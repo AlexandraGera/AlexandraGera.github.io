@@ -20,10 +20,14 @@
 		width: 480px;
 	}
 	.slider{
-		width: 480px;
+		width: 100%;
+		max-width: 480px;
 	}
 	.main-slider_button-right {
 		left: 95.18%;
+	}
+	.info_sub{
+		width: 193px;
 	}
 	.slider_img{
 		display: inline-block;
@@ -42,7 +46,7 @@
 		margin: 0 0 0 41px;
 	}
 	.controller{
-		margin-top: 40px;
+		margin-top: 37px;
 		z-index: 3;
 		position: relative;
 	}
@@ -85,8 +89,8 @@
 		margin: 0 0 0 39px;
 	}
 	.slider--opinion .info_header{
-		width: 210px;
-		padding-top: 30px;
+		width: 218px;
+		padding-top: 24px;
 		padding-bottom: 13px;
 		margin: 0 0;	
 		font-size: 30px;
@@ -94,6 +98,8 @@
 	.slider--opinion .info_sub {
 		display: inline-block;
 		font-size: 30px;
+		width: 113px;
+		padding-top: 3px;
 	}
 	.slider--opinion .info_main {
 		width: 329px;
@@ -282,10 +288,11 @@
 		width: 245px;
 		height: 377px;
 		top: -57px;
-		    left: 434px
+		left: 434px
 	}
 	.slider {
-		width: 768px;
+		width: 100%;	
+		max-width: 768px;
 	}
 	.info_main{
 		display: block;
@@ -302,6 +309,8 @@
 		font-size: 47px;
 	}
 	.info_sub {
+		width: 270px;
+		height: 24px;
 		font-size: 24px;
 		padding: 20px 0 8px;
 		display: block;
@@ -325,8 +334,11 @@
 		display: inline-block;
 		padding-left: 80px;
 	}
+	.about2{
+		padding-left: 84px;
+	}
 	.about3{
-		padding-left: 88px;
+		padding-left: 92px;
 	}
 	.about_text {
 		width: 151px;
@@ -345,13 +357,14 @@
 		left: 37px;
 	}
 	.about_link {
-		padding: 6px 23px 0 0;
+		padding: 6px 18px 0 0;
 	}
 	.blog_wrapper{
 		width: 768px;
+		padding-bottom: 70px;
 	}
 	.blog {
-		padding-bottom: 70px;
+		padding-bottom: 0;
 	}
 	.blog_opinions {
 		float: left;
@@ -426,14 +439,23 @@
 	}
 	.footer-information {
 		max-width: 768px;
-		margin: 0 22.9%;
+		margin: 0 auto;
 		padding-top: 101px;
 	}
 	.news {
-		width: 254px;
+		width: 205px;
 		height: 205px;
 		margin: 0;
 		display: inline-block;
+	}
+	.news1{
+		margin-left: 18px;
+	}
+	.news2{
+		margin-left: 58px;
+	}
+	.news3{
+		margin-left: 55px;
 	}
 	.news_text {
 		width: 205px;
@@ -462,5 +484,275 @@
 	}
 	.disigned-copy_text {
 		text-align: right;
+	}
+}
+
+@media screen and (min-width: 960px){
+	.fon-slider {
+		top: 277px;
+	}
+	.header_wrapper{
+		max-width: 960px;
+	}
+	.logo{
+		float: left;
+		padding: 69px 0 29px 0;
+	}
+	.menu{
+		float: right;		
+		padding-top: 68px;
+		padding-right: 0px;
+	}
+	.menu_item {
+		margin-left: 39px;
+		padding: 0 4px;
+		margin-right: 0;
+	}
+	.slid-wrapper {
+		padding-bottom: 15px;
+	}
+	.main-slider{
+		width: 960px;
+		padding: 132px 0 68px 0;
+	}
+	.slider {
+		width: 100%;	
+		max-width: 960px;
+	}
+	.main-slider_button-left,
+	.main-slider_button-right{
+		display: none;	
+	}
+	.info_header {
+		font-size: 58px;
+	}
+	.info_sub {
+		font-size: 32px;
+		padding: 22px 0 10px;
+	}
+	.info_main {
+		width: 501px;
+		height: 145px;
+		letter-spacing: 0.5px;
+	}
+	.item_info {
+		margin: 0 0 0 12px;
+	}
+	.slider_img {
+		top: 19px;
+		left: 626px;
+	}
+	.controller-slider {
+		padding-left: 578px;
+		width: 96px;
+	}
+	.controller {
+		margin-top: 95px;
+	}
+	.wrapper-about {
+		max-width: 960px;
+	}
+	.about {
+		width: 223px;
+		padding-left: 74px;
+		padding-top: 34px;
+	}
+	.about2 {
+		margin-left: 39px;
+	}
+	.about3 {
+		margin-left: 25px;
+	}
+	.about_img {
+		top: 37px;
+		left: 21px;
+	}
+	.about_img1 {
+		top: 34px;
+		left: 19px;
+	}
+	.about_header {
+		padding-bottom: 11px;
+		font-size: 30px;
+	}
+	.about_text {
+		width: 223px;
+		height: 123px;
+	}
+	.about_link {
+		padding: 13px 6px 0 0;
+	}
+	.blog {
+		padding-bottom: 0;
+	}
+	.blog_wrapper {
+		width: 960px;
+		padding-bottom: 69px;
+	}
+	.blog_opinions {
+		width: 500px;
+		padding-left: 20px;
+	}
+	.blog_posts {
+		width: 440px;
+		margin: 13px 0px 0 0;
+	}
+	.slider--opinion .slider_item {
+		width: 453px;
+		height: 296px;
+		background: url("../img/cloud.png") center center no-repeat;
+		margin: 0;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+	}
+	.slider--opinion .item_info {
+		margin: 0 0 0 54px;
+	}
+	.slider--opinion .info_header {
+		padding-top: 33px;
+		font-size: 29px;
+	}
+	.slider--opinion .info_sub {
+		display: inline-block;
+		font-size: 31px;
+	}
+	.slider--opinion .info_main {
+		width: 349px;
+		height: 177px;
+		padding-top: 7px;
+	}
+	.slider--opinion .slider_img {
+		top: 19px;
+		left: -10px;
+	}
+	.controller-slider--opinion {
+		width: 133px;
+		margin: 0 190px 0 186px;
+		margin-top: -4px;
+	}
+	.new_item {
+		width: 370px;
+	}
+	.item_header {
+		letter-spacing: -1px;
+	}
+	.item_text {
+		width: 370px;
+		letter-spacing: -1.1px;
+	}
+	.posts_link {
+		padding: 15px 11px;
+	}
+	.brands {
+		width: 960px;
+		padding: 23px 0px 31px 168px;
+	}
+	.brands_link2 {
+		background-position: -224px -90px;
+	}
+	.brands_link3 {
+		background-position: -220px -180px;
+	}
+	.brands_link4 {
+		background-position: -216px -281px;
+	}
+	.brands_link5 {
+		background-position: -199px -367px;
+		width: 143px;
+	}
+	.brands_link6 {
+		background-position: -178px -432px;
+		width: 143px;
+	}
+	.footer-information {
+		max-width: 960px;
+		padding-top: 99px;
+	}
+	.info-wrapper {
+		padding-bottom: 36px;
+	}
+	.description,
+	.comments {
+		display: block;
+		width: 294px;
+		height: 205px;
+		margin: 0;
+		float: left;
+		padding-right: 55px;
+	}
+	.footer-information .logo_img {
+		padding-bottom: 13px;
+	}
+	.description_text{
+		padding-left: 10px;
+		text-shadow: 0.5px 0.9px 0 white;
+		color: #787878;
+		font-family: "OpenSansRegular";
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	.description_copy{
+		padding-left: 9px;
+		text-shadow: 0.5px 0.9px 0 white;
+		color: #c5c5c5;
+		font-family: Georgia;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 34px;
+	}
+	.comments_header {
+		padding-bottom: 9px;
+		text-shadow: 0.5px 0.9px 0 white;
+		color: #454545;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	.comments_text{
+		width: 271px;
+		height: 171px;
+		overflow: hidden;
+		text-shadow: 0.5px 0.9px 0 white;
+		color: #787878;
+		font-family: "OpenSansRegular";
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	.news{
+		display: block;
+		float: left;
+	}
+	.news1 {
+		margin-left: -9px;
+	}
+	.news2,
+	.news3{
+		display: none;
+	}
+	.news_header{
+		font-size: 30px;
+	}
+	.news_text{
+		width: 271px;
+		height: 167px;
+	}
+	.nav_wrapper {
+		height: 114px;
+	}
+	.navigation-footer {
+		max-width: 960px;
+	}
+	.menu--footer {
+		display: inline-block;
+		margin: 0 42px 0 7px;
+	}
+	.menu--footer .menu_item {
+		margin-right: 32px;
+		margin-left: -1px;
+	}
+	.disigned-copy {
+		display: inline-block;
+		padding-right: 0;
 	}
 }

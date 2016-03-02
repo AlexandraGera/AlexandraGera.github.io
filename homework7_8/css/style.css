@@ -1,5 +1,5 @@
-.clearfix::after{
-	content: "";
+.clearfix::after {
+	content: " ";
 	clear: both;
 	display: block;
 }
@@ -110,7 +110,6 @@ header{
 	display: none;
 }
 .slid-wrapper{
-
 	padding-bottom: 65px;
 }
 .main-slider{
@@ -146,8 +145,13 @@ header{
 	font-size: 36px;
 }
 .info_sub{
+	height: 27px;
+	padding-top: 4px;
+	overflow: hidden;
+	display: inline-block;
 	color: #edbfff;
 	font-size: 17px;
+	line-height: 28px;
 }
 .info_main,
 .slider_img{
@@ -189,7 +193,7 @@ header{
 .wrapper-about{
 	width: 100%;
 	max-width:320px;
-	margin: 45px auto 62px;
+	margin: 45px auto 60px;
 }
 .about{
 	position: relative;	
@@ -234,7 +238,7 @@ header{
 }
 .about_link{
 	display: block;
-	padding: 11px 14px 0 0;
+	padding: 12px 14px 0 0;
 	text-align: right;
 	text-shadow: 0.5px 0.9px 0 #0f1518;
 	color: white;
@@ -286,14 +290,17 @@ header{
 }
 .slider--opinion .info_sub{
 	display: block;
+	padding-top: 0px;
+	line-height: 23px;
 	color: #edbfff;
 	font-size: 24px;
+
 }
 .slider--opinion .info_main{
 	display: block;
 	width: 181px;
 	height: 168px;
-	padding-top: 4px;
+	padding-top: 2px;
 	overflow: hidden;
 	margin: 0 auto;
 	text-shadow: 0.5px 0.9px 0 white;
