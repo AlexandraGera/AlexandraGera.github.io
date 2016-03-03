@@ -25,7 +25,8 @@ header{
 	margin: 0 auto;
 }
 .menu-dropdown{
-	width: 245px;
+	max-width: 245px;
+	width: 76.5625%;
 	margin: 0 auto;
 	position: relative;
 	border: 1px solid rgba(5,17,22,0);
@@ -38,7 +39,8 @@ header{
 	border-bottom: none;
 }
 .item-main_submenu{
-	width: 245px;
+	max-width: 245px;
+	width: 100%;
 	display: none;
 	z-index: 5;
 	position: absolute;
@@ -113,18 +115,20 @@ header{
 	padding-bottom: 65px;
 }
 .main-slider{
-	width: 320px;
+	width: 100%;
+	max-width: 320px;
 	position: relative;	
 	padding: 109px 0 68px 0;
 	z-index: 2;
 }
 .slider{
-	width: 192px;
+	width: 61%;
+	max-width: 192px;
 	margin: 0 auto;
 }
 .main-slider_button-left,
 .main-slider_button-right{
-	width: 28px;
+	width: 25px;
 	height: 42px;
 	display: block;
 	position: absolute;
@@ -136,7 +140,7 @@ header{
 .main-slider_button-right{
 	background: url(../img/sprite2.png)center center no-repeat;
 	background-position: -1px -40px;
-	left: 92.18%;
+	left: 91%;
 }
 .info_header{
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
@@ -197,7 +201,8 @@ header{
 }
 .about{
 	position: relative;	
-	width: 225px;
+	max-width: 225px;
+	width: 70.3125%;
 	margin: 0 auto;
 	padding-left: 70px;
 	padding-top: 25px;
@@ -227,7 +232,7 @@ header{
 	line-height: 24px;
 }
 .about_text{
-	width: 225px;
+	width: 100%;
 	height: 72px;
 	overflow: hidden;
 	text-shadow: 0.5px 0.9px 0 #0f1518;
@@ -262,7 +267,8 @@ header{
 	border-bottom: 1px solid #e6e6e6;
 }
 .blog_wrapper{
-	width: 320px;
+	width: 100%;
+	max-width: 320px;
 	margin: 0 auto;
 	padding-bottom: 73px;
 }
@@ -271,7 +277,8 @@ header{
 }
 .slider--opinion .slider_item{
 	position: relative;
-	width: 256px;
+	max-width: 256px;
+	width: 80%;
 	height: 272px;
 	margin: 0px 44px 19px;
 	background: #fff;
@@ -279,7 +286,8 @@ header{
 }
 .slider--opinion .info_header{
 	display: block;
-	width: 187px;	
+	width: 73.0469%;	
+	max-width: 187px;	
 	margin: 0 auto;
 	padding-top: 25px;
 	text-shadow: 0.5px 0.9px 0 white;
@@ -298,7 +306,8 @@ header{
 }
 .slider--opinion .info_main{
 	display: block;
-	width: 181px;
+	width: 70.7032%;
+	max-width: 181px;
 	height: 168px;
 	padding-top: 2px;
 	overflow: hidden;
@@ -317,7 +326,8 @@ header{
 	left: -24px;
 }
 .controller-slider--opinion{
-	width: 84px;
+	width: 26.25%;
+	max-width: 84px;
 	margin: 0 141px;
 }
 .controller-slider--opinion .controller_link{
@@ -336,7 +346,8 @@ header{
 	background-position: -67px -27px;
 }
 .blog_posts{
-	width: 295px;	
+	width: 92.1875%;
+	max-width: 225px;	
 	margin: 47px 19px 0;
 }
 .posts_header{
@@ -347,7 +358,8 @@ header{
 }
 .new_item{
 	position: relative;
-	width: 211px;
+	width: 93.77777%;
+	max-width: 211px;
 	padding: 17px 0 0 68px;
 }
 .item_img{
@@ -367,7 +379,8 @@ header{
 	background-position: -157px -139px;
 }
 .item_header{
-	width: 193px;
+	width: 91.47%;
+	max-width: 193px;
 	height: 28px;
 	margin-bottom: -4px;
 	overflow: hidden;
@@ -380,7 +393,8 @@ header{
 	letter-spacing: 0.8px;
 }
 .item_text{
-	width: 225px;
+	width: 100%;
+	max-width: 211px;
 	height: 28px;
 	overflow: hidden;
 	text-shadow: 0.5px 0.9px 0 white;
@@ -405,12 +419,13 @@ header{
 	background-color: #f9f9f9;
 	z-index: 5;
 	position: relative;
-	-webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.7);
-	-moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.7);
-	box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.7);
+	-webkit-box-shadow: -12px 4px 10px 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    -12px 4px 10px 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         -12px 4px 10px 0px rgba(50, 50, 50, 0.7);
 }
 .brands{
-	width: 245px;	
+	width: 100%;
+	max-width: 245px;
 	margin: 0px auto;
 	padding: 21px 0 40px;
 }
@@ -439,6 +454,7 @@ header{
 .brands_link6{
 	background-position: -190px -435px;
 	margin: 0px 0 30px;
+	width: 131px;
 }
 
 /*Footer*/
