@@ -191,7 +191,9 @@ header{
 
 .main-company{
 	width: 100%;
-	background-image: linear-gradient(to top, #322539 0%, #745083 100%);
+	background: -moz-linear-gradient(bottom, #322539 0%, #745083 100%);
+	background: -webkit-linear-gradient(bottom, #322539 0%, #745083 100%);
+	background: linear-gradient(to top, #322539 0%, #745083 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539',GradientType=0 ); /* IE6-9 */
 	border-bottom: 1px solid #33253a;
 	border-top: 1px solid #33253a;
