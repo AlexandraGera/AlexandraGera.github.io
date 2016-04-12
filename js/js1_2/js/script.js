@@ -41,9 +41,6 @@ if (repeat==true){
 	}
 }
 
-
-raisedToThePower();
-
 var arrayName = []; 
 
 for(var i=0;i < 5;i++)
