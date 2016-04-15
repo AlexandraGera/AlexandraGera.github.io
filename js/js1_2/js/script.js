@@ -6,17 +6,17 @@ function raisedToThePower(number,exponent){
 	return result;
 }
 var number= prompt('введите число, которое нужно возвести в степень' , '');
-if(number <= 1){
+if(number <=0){
 	alert('Число ' + number +
-		'не поддерживается, введите целое число, большее 1'
+		'не поддерживается, введите целое число, большее 0'
 		);
 } 
-if(number >=1){
+if(number >0){
 	var exponent= prompt('в какую степень возвести?', 2);
 };
-if (exponent <= 1) {
+if (exponent < 1) {
 	alert('Степень ' + exponent +
-		'не поддерживается, введите целую степень, большую 1'
+		'не поддерживается, введите целую степень, большую 0'
 		);
 } else {
 	alert( raisedToThePower(number, exponent) );
@@ -24,17 +24,17 @@ if (exponent <= 1) {
 var repeat= confirm("Возвести другое число в степень?");
 if (repeat==true){
 	var number= prompt('введите число, которое нужно возвести в степень' , '');
-	if(number <= 1){
+	if(number <=0){
 		alert('Число ' + number +
-			'не поддерживается, введите целое число, большее 1'
+			'не поддерживается, введите целое число, большее 0'
 			);
 	}
-	if(number >=1){
+	if(number >0){
 		var exponent= prompt('в какую степень возвести?', 2);
 	};
-	if (exponent <= 1) {
+	if (exponent < 1) {
 		alert('Степень ' + exponent +
-			'не поддерживается, введите целую степень, большую 1'
+			'не поддерживается, введите целую степень, большую 0'
 			);
 	} else {
 		alert( raisedToThePower(number, exponent) );
