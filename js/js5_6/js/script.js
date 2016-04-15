@@ -52,7 +52,7 @@ function timeGo() {
 		};
 	};  
 	timerShow.innerHTML = h + ':' + m + ':' + s + ':' + ms;
-	timer = setTimeout( timeGo , 100);
+	timer = setTimeout( timeGo , 10);
 };
 
 function startStopButton() {
