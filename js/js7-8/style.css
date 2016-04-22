@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+/*Tabs*/
+
+.box{
+	margin: 15px;
+	width: 550px;
+	float: left;
+}
+.menu_box{
+	padding: 10px 20px 0 20px;
+	list-style: none;
+	background: #866E6E;
+	border-top:1px solid ##866E6E ;
+	border-radius:5px 5px 0 0 ;
+}
+.item_menu{
+	display: inline-block;
+}
+.link_item{
+	display:block;
+	padding: 5px;
+	background: #585454;
+	border: 1px solid #000;
+	border-radius: 5px 5px 0 0;
+	text-decoration: none;
+	color:#000;
+	font-family: Arial;
+}
+.info_box{
+	display: none;
+	padding: 20px;
+	height: 280px;
+	border-bottom: 1px solid #866E6E;	
+	border-right: 1px solid #866E6E;	
+	border-left: 1px solid #866E6E;	
+	border-radius:0 0 5px 5px ;
+}
+.text_info{
+	font-family: Arial;
+}
+.active{
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+/*End tabs*/
+
+/*Form*/
+.form{
+	width: 512px;
+	margin: 20px;	
+	padding: 30px;
+	float: left;
+	border: 1px solid #826868;
+	border-radius:10px ;
+}
+.form-item{
+	margin-bottom: 5px;
+}
+.form-item>p{
+	font-family: Arial;
+}
+input{
+	margin: 2px;	
+}
+.lastname{
+	margin-left: 2px;
+}
+.address{
+	margin-left: 12px;
+}
+.text-help{
+	display: none;
+	padding: 2px;
+	background: #826868;
+	border: 1px solid #000;
+	border-radius: 5px;
+	color: #fff;
+}
+button{
+	padding: 4px;
+	background: #6D5555;
+	border-radius:8px ;
+	color: #fff;
+	font-family: Arial;
+}
+button:hover{
+	padding: 4px;
+	background: #826868;
+	border-radius:8px ;
+	color: #fff;
+}
+
+/*End form*/
