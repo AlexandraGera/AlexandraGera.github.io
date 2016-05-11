@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS_9_10</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cusel.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/jquery.jcarousel-pagination.min.js"></script>
+	<script src="js/jquery.jcarousel-control.min.js"></script>
+	<!-- <script src="js/jquery.jcarousel-autoscroll.min.js"></script> -->
+	<script src="js/cusel.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jScrollPane.js"></script>
+	<script src="js/jquery.color.js"></script>
+</head>
+<body>
+	<aside>
+		<form action="#" class="select-form">
+			<div class="lineForm">
+				<select id="tour" name="tour" tabindex="1">
+					<option value="Украина">Украина</option>
+					<option value="Польша">Польша</option>
+					<option value="Венгрия">Венгрия</option>
+					<option value="Тайланд">Тайланд</option>
+					<option value="Германия">Германия</option>
+					<option value="Франция">Франция</option>
+					<option selected="selected" value="Выбрать страну">Выбрать страну</option>
+				</select>
+			</div>
+			<div class="checkJS-container">
+				<div>
+					<label for="check1-js">label 1</label>
+					<span class="check-js"><input type="checkbox" id="check1-js"></span>
+				</div>
+				<div>
+					<label for="check2-js">label 2</label>
+					<span class="check-js"><input type="checkbox" id="check2-js"></span>
+				</div>
+				<div>
+					<label for="check3-js">label 3</label>
+					<span class="check-js"><input type="checkbox" id="check3-js" disabled></span>
+				</div>
+			</div>
+			<div class="checkCSS-container">
+				<input type="checkbox" id="check1-css" class="checkbox-css">
+				<label for="check1-css" class="checkCSS-label">label 4</label><br>
+				<input type="checkbox" id="check2-css" class="checkbox-css">
+				<label for="check2-css" class="checkCSS-label">label 5</label><br>
+				<input type="checkbox" id="check3-css" class="checkbox-css" disabled>
+				<label for="check3-css" class="checkCSS-label">label 6</label><br>
+			</div>
+		</form>
+	</aside>
+	<div class="jcarousel-wrapper">
+		<div class="jcarousel">
+			<ul class="clearfix">
+				<li><img src="img/slide1.jpg" alt=""></li>
+				<li><img src="img/slide2.jpg" alt=""></li>
+				<li><img src="img/slide3.jpg" alt=""></li>
+				<li><img src="img/slide4.jpg" alt=""></li>
+				<li><img src="img/slide5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<a class="jcarousel-prev" href="#">&lsaquo;</a>
+		<a class="jcarousel-next" href="#">&rsaquo;</a>
+		<div class="jcarousel-pagination">
+			<!-- Pagination items will be generated in here -->
+		</div>
+	</div>
+	<nav class="clearfix">
+		<div class="menu-wrapper">
+			<ul class="menu">
+				<li><a href="#">Nav 1</a></li>
+				<li><a href="#">Nav 2</a></li>
+				<li><a href="#">Nav 3</a></li>
+				<li class="dropdown">
+					<a href="#">Nav 4</a>
+					<ul class="submenu">
+						<li><a href="#">4.1</a></li>
+						<li><a href="#">4.2</a></li>
+						<li><a href="#">4.3</a></li>
+						<li><a href="#">4.4</a></li>
+						<li class="dropdown">
+							<a href="#">4.5</a>
+							<ul class="submenu">
+								<li><a href="#">4.5.1</a></li>
+								<li><a href="#">4.5.2</a></li>
+								<li><a href="#">4.5.3</a></li>
+								<li><a href="#">4.5.4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Nav 5</a></li>
+				<li><a href="#">Nav 6</a></li>
+			</ul>
+		</div>
+	</nav>
+	<script src="js/script.js"></script>
+</body>
+</html>
