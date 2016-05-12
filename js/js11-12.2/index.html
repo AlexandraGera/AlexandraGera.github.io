@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS homework 12.2</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+</head>
+<body>
+	<script type="text/template" id="it_is_me">
+		<div class="cv">
+			<div class="header-cv">
+				<h3><%=data[0].title%></h3>
+				<img src="<%=data[0].photo%>" alt="">
+				<p><%=data[0].paragraph%></p>
+			</div>
+			<div class="content-cv">
+				<p><%=data[1].paragraph%></p>
+				<ul>
+					<li><%=data[1].list1%></li>
+					<li><%=data[1].list2%></li>
+					<li><%=data[1].list3%></li>
+				</ul>
+			</div>
+			<div class="content-cv">
+				<p><%=data[2].paragraph1%></p>
+				<p><%=data[2].paragraph1%><br><a href="<%=data[2].linkHref%>"><%=data[2].linkName%></a></p>
+			</div>
+			<div class="content-cv">
+				<p><%=data[3].paragraph%></p>
+			</div>
+		</div>
+		
+
+	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
