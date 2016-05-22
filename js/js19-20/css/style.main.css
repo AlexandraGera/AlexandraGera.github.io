@@ -317,7 +317,8 @@ header {
         font-size: 16px;
         font-weight: 500;
         text-decoration: none;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #2a2d32; }
       .information .news .news-item .item-title:hover {
         color: #248cec; }
       .information .news .news-item .item-comment {
