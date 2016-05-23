@@ -1,17 +1,17 @@
 var raisedToThePower = require('../js/script.js');
 
-describe("аunction raisedToThePower", function() {
+describe("inspection raisedToThePower", function() {
   it("возведение положительного числа в положительную степень", function() {
   	var result;
   	result = raisedToThePower(2,3);
     expect(result).toBe(8);
   });
-  it("возведениу положительного числа в отрицательную степень", function() {
+  it("возведениe положительного числа в отрицательную степень", function() {
   	var result;
   	result = raisedToThePower(4,-5);
     expect(result).toBe(0.0009765625);
   });
-  it("Проверка возведения в степень, равную 0", function() {
+  it("возведениe в степень 0", function() {
   	var result;
   	result = raisedToThePower(8,0);
     expect(result).toBe(1);
