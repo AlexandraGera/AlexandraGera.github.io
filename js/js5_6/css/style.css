@@ -8,9 +8,9 @@ body{
 	background-color: rgba(250,250,250,0.5);
 }
 .timer{
-	display: block;
+	display: inline-block;
 	padding-top: 44px;
-	text-align: center;
+	margin-left: 94px;
 	font-family: Arial;
 	font-size: 71px;
 }
