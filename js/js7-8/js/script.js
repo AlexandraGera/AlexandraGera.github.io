@@ -6,79 +6,52 @@ $( "a" ).click(function( event ) {
 	event.preventDefault();
 });
 
-var $link1= $(".link1");
-var $link2= $(".link2");
-var $link3= $(".link3");
-var $info1= $(".info1");
-var $info2= $(".info2");
-var $info3= $(".info3");
+var link1= $(".link1");
+var link2= $(".link2");
+var link3= $(".link3");
+var info1= $(".info1");
+var info2= $(".info2");
+var info3= $(".info3");
 
-$link1.addClass('active');
-$info1.show();
-
-$link1.on('click' , function(){
-	$link1.addClass('active');
-	$link2.removeClass('active');
-	$link3.removeClass('active');
-	$info1.show();
-	$info2.hide();
-	$info3.hide();
+link1.addClass('active');
+info1.show();
+function linkShow(linkName, contentName){
+	linkName.addClass('active');
+	contentName.show();
+};
+function linkHide(linkName1,linkName2,contentName1,contentName2){
+	linkName1.removeClass('active');
+	linkName2.removeClass('active');
+	contentName1.hide();
+	contentName2.hide();
+};
+link1.on('click' , function(){
+	linkShow(link1, info1);
+	linkHide(link2,link3,info2,info3);
 });
-
-$link2.on('click' , function(){
-	$link2.addClass('active');
-	$link1.removeClass('active');
-	$link3.removeClass('active');
-	$info2.show();
-	$info1.hide();
-	$info3.hide();
+link2.on('click' , function(){
+	linkShow(link2, info2);
+	linkHide(link1,link3,info1,info3);
 });
-
-$link3.on('click' , function(){
-	$link3.addClass('active');
-	$link1.removeClass('active');
-	$link2.removeClass('active');
-	$info3.show();
-	$info1.hide();
-	$info2.hide();
+link3.on('click' , function(){
+	linkShow(link3, info3);
+	linkHide(link2,link1,info2,info1);
 });
 
 //Form
-var $firstname=$('.firstname');
-var $lastname=$('.lastname');
-var $address=$('.address');
-var $help1=$('.help1');
-var $help2=$('.help2');
-var $help3=$('.help3');
-var $button=$('button');
+var textHelp=$('.text-help');
+var button=$('button');
+var input=$('input');
 
-$firstname.hover(
+input.hover(
 	function() {
-		$help1.show();
-	}, function() {
-		$help1.hide();
+		$(this).siblings().show();
+	},function() {
+		$(this).siblings().hide();
 	}
 	);
 
-$lastname.hover(
-	function() {
-		$help2.show();
-	}, function() {
-		$help2.hide();
-	}
-	);
-
-$address.hover(
-	function() {
-		$help3.show();
-	}, function() {
-		$help3.hide();
-	}
-	);
-
-$button.on('click' , function(){
-	$help1.show();
-	$help2.show();
-	$help3.show();
+button.on('click' , function(){
+	textHelp.show();
 });
 })
