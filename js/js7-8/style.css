@@ -50,7 +50,7 @@
 
 /*Form*/
 .form{
-	width: 512px;
+	width: 515px;
 	margin: 20px;	
 	padding: 30px;
 	float: left;
@@ -67,10 +67,10 @@ input{
 	margin: 2px;	
 }
 .lastname{
-	margin-left: 2px;
+	margin-left: 3px;
 }
 .address{
-	margin-left: 12px;
+	margin-left: 15px;
 }
 .text-help{
 	display: none;
