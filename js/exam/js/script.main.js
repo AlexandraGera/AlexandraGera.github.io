@@ -5191,19 +5191,21 @@ $(function() {
   });
 
 //Form
+
 $('form').on('submit', function() {
   var input = $('.search_input').val();
-  console.log(input);
   $('.holiday-ideas_container').hide();
   $.ajax({
     url: "https://pixabay.com/api/?key=2363371-b6bbc35258ec148f978e7d437&per_page=7&q="+ input +"&image_type=photo",
     dataType: 'jsonp',
     method: 'GET',
     success: function(data, textStatus) {
-      console.log(input);
-      var div = document.createElement('div');
-      div.classList.add('result-search_container');
-      div.classList.add('grid');
+      
+      var div = $('.result-search_container');
+      console.log(div);
+      var type= $.type(div);
+      console.log(type);
+      div.addClass('grid');
       $.each(data.hits, function(i) {
         console.log(data.hits);
         var divItem = document.createElement('div');
