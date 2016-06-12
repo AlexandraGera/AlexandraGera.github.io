@@ -5172,32 +5172,33 @@ var trim = String.prototype.trim ?
 
 
 $(function() {
-$('.jcarousel').jcarousel();
-$('.jcarousel').jcarouselAutoscroll({
-  interval: 3000,
-  target: '+=1',
-  autostart: true
-});
+  $('.jcarousel').jcarousel();
+  $('.jcarousel').jcarouselAutoscroll({
+    interval: 3000,
+    target: '+=1',
+    autostart: true
+  });
 
-$('.jcarousel-prev').click(function(event) {
-  event.preventDefault();
-  var jcarousel= $(this).attr('href');
-  $(jcarousel).jcarousel('scroll', '-=1');
-});
-$('.jcarousel-next').click(function(event) {
-  event.preventDefault();
-  var jcarousel= $(this).attr('href');
-  $(jcarousel).jcarousel('scroll', '+=1');
-});
+  $('.jcarousel-prev').click(function(event) {
+    event.preventDefault();
+    var jcarousel= $(this).attr('href');
+    $(jcarousel).jcarousel('scroll', '-=1');
+  });
+  $('.jcarousel-next').click(function(event) {
+    event.preventDefault();
+    var jcarousel= $(this).attr('href');
+    $(jcarousel).jcarousel('scroll', '+=1');
+  });
 
 //Form
 $('form').on('submit', function() {
   var input = $('.search_input').val();
+  console.log(input);
   $('.holiday-ideas_container').hide();
   $.ajax({
     url: "https://pixabay.com/api/?key=2363371-b6bbc35258ec148f978e7d437&per_page=7&q="+ input +"&image_type=photo",
     success: function(data, textStatus) {
-      console.log(data);
+      console.log(input);
       var div = document.createElement('div');
       div.classList.add('result-search_container');
       div.classList.add('grid');
@@ -5210,15 +5211,16 @@ $('form').on('submit', function() {
         div.appendChild(divItem);                    
       });
       $('.holiday-ideas_result-search').html(div);
-    },
+      $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+      });
+    }
   });    
   return false;  
 }); 
 
-$('.grid').isotope({
-    itemSelector: '.grid-item',
-     layoutMode: 'fitRows'
-  });
+
 
 
 });
