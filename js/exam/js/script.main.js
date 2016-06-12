@@ -5197,6 +5197,8 @@ $('form').on('submit', function() {
   $('.holiday-ideas_container').hide();
   $.ajax({
     url: "https://pixabay.com/api/?key=2363371-b6bbc35258ec148f978e7d437&per_page=7&q="+ input +"&image_type=photo",
+    dataType: 'jsonp',
+    method: 'GET',
     success: function(data, textStatus) {
       console.log(input);
       var div = document.createElement('div');
@@ -5215,6 +5217,9 @@ $('form').on('submit', function() {
         itemSelector: '.grid-item',
         layoutMode: 'fitRows'
       });
+    },
+    error: function(data, textStatus) {
+      console.log('Error: images not found ', data);
     }
   });    
   return false;  
