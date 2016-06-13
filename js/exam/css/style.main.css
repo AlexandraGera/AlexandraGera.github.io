@@ -40,9 +40,6 @@ table {
   clear: both;
   display: block; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
 body {
   background-color: #fff; }
 
@@ -68,9 +65,14 @@ header {
   font-size: 14px; }
 
 .header_link-sign-up {
+  padding: 10px 17px;
   border: 2px solid #fff;
+  -moz-border-radius: 25px;
+  /* Firefox */
+  -webkit-border-radius: 25px;
+  /* Safari, Chrome */
   border-radius: 25px;
-  padding: 10px 17px; }
+  /* CSS3 */ }
 
 .logo-header {
   margin-top: 116px;
@@ -98,7 +100,12 @@ header {
   border: 1px solid #ff4e50;
   color: #fff;
   background-color: #ff4e50;
+  -moz-border-radius: 25px;
+  /* Firefox */
+  -webkit-border-radius: 25px;
+  /* Safari, Chrome */
   border-radius: 25px;
+  /* CSS3 */
   font-family: Montserrat, Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -114,7 +121,12 @@ header {
 .works_step {
   width: 272px;
   height: 176px;
+  -moz-border-radius: 4px;
+  /* Firefox */
+  -webkit-border-radius: 4px;
+  /* Safari, Chrome */
   border-radius: 4px;
+  /* CSS3 */
   margin: 5px auto;
   padding: 69px 14px 0;
   font-family: Montserrat, Arial, sans-serif;
@@ -141,7 +153,12 @@ header {
   padding: 5px 12px 5px 14px;
   margin: 1px 7px;
   text-transform: uppercase;
+  -moz-border-radius: 25px;
+  /* Firefox */
+  -webkit-border-radius: 25px;
+  /* Safari, Chrome */
   border-radius: 25px;
+  /* CSS3 */
   background-color: #ff4e50;
   font-size: 10px;
   font-weight: 400;
@@ -162,6 +179,7 @@ header {
 
 .partners {
   font-family: Montserrat, Arial, sans-serif;
+  color: #333;
   text-align: center; }
 
 .partners_header {
@@ -216,7 +234,12 @@ header {
   width: 300px;
   height: 120px;
   margin: 5px auto 10px;
-  border-radius: 4px; }
+  -moz-border-radius: 4px;
+  /* Firefox */
+  -webkit-border-radius: 4px;
+  /* Safari, Chrome */
+  border-radius: 4px;
+  /* CSS3 */ }
 
 .holiday-ideas_item:nth-child(1) {
   background: url("../img/img-default1.jpg") center no-repeat;
@@ -257,7 +280,12 @@ header {
 
 .grid-item {
   overflow: hidden;
+  -moz-border-radius: 7px;
+  /* Firefox */
+  -webkit-border-radius: 7px;
+  /* Safari, Chrome */
   border-radius: 7px;
+  /* CSS3 */
   float: left;
   margin: 0 10px 10px;
   position: relative;
@@ -268,6 +296,9 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
 .search_header {
@@ -283,7 +314,12 @@ header {
   padding-left: 11px;
   background-color: white;
   border: 1px solid #ccc;
+  -moz-border-radius: 4px;
+  /* Firefox */
+  -webkit-border-radius: 4px;
+  /* Safari, Chrome */
   border-radius: 4px;
+  /* CSS3 */
   box-shadow: 0 1px 0 #eee;
   color: #ccc; }
 
@@ -453,7 +489,12 @@ footer {
     width: 31%;
     margin: 8px;
     overflow: hidden;
+    -moz-border-radius: 7px;
+    /* Firefox */
+    -webkit-border-radius: 7px;
+    /* Safari, Chrome */
     border-radius: 7px;
+    /* CSS3 */
     float: left; }
 
   .holiday-ideas_text {
@@ -466,11 +507,7 @@ footer {
     width: 64%; }
 
   .grid-item img {
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+    height: 400px; }
 
   .holiday-ideas_header-bottom {
     margin: 95px 0 36px; }

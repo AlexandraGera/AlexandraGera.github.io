@@ -10,9 +10,6 @@ $Roboto: Roboto , Arial , sans-serif;
 	clear: both;
 	display: block;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
-    display: block;
-}
 body{
 	background-color: $white;
 }
@@ -38,9 +35,11 @@ header{
 	font-size: 14px;
 }
 .header_link-sign-up{
-	border: 2px solid $white;
-	border-radius:25px;
 	padding: 10px 17px;
+	border: 2px solid $white;
+	-moz-border-radius: 25px; /* Firefox */
+	-webkit-border-radius:25px; /* Safari, Chrome */
+	border-radius: 25px; /* CSS3 */
 }
 .logo-header{
 	margin-top: 116px;
@@ -68,7 +67,9 @@ header{
 	border: 1px solid $pink;
 	color:$white;
 	background-color: $pink;
-	border-radius: 25px;
+	-moz-border-radius: 25px; /* Firefox */
+	-webkit-border-radius:25px; /* Safari, Chrome */
+	border-radius: 25px; /* CSS3 */
 	font-family: $Montserrat;
 	font-size: 14px;
 	font-weight: 700;
@@ -84,7 +85,9 @@ header{
 .works_step{
 	width: 272px;
 	height: 176px;
-	border-radius: 4px;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius:4px; /* Safari, Chrome */
+	border-radius: 4px; /* CSS3 */
 	margin: 5px auto;
 	padding: 69px 14px 0;
 	font-family: $Montserrat;
@@ -112,7 +115,9 @@ header{
 	padding: 5px 12px 5px 14px;
 	margin: 1px 7px;
 	text-transform: uppercase;
-	border-radius:25px;
+	-moz-border-radius: 25px; /* Firefox */
+	-webkit-border-radius:25px; /* Safari, Chrome */
+	border-radius: 25px; /* CSS3 */
 	background-color: $pink; 
 	font-size: 10px;
 	font-weight: 400;
@@ -133,7 +138,7 @@ header{
 }
 .partners{
 	font-family: $Montserrat;
-	$dark-gray:#333;
+	color:#333;
 	text-align: center;
 }
 .partners_header{
@@ -188,7 +193,10 @@ header{
 	width: 300px;
 	height: 120px;
 	margin: 5px auto 10px;
-	border-radius: 4px;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius:4px; /* Safari, Chrome */
+	border-radius: 4px; /* CSS3 */
+
 }
 .holiday-ideas_item:nth-child(1){
 	background: url('../img/img-default1.jpg') center no-repeat;
@@ -230,7 +238,9 @@ header{
 }
 .grid-item{
 	overflow: hidden;
-	border-radius: 7px;
+	-moz-border-radius: 7px; /* Firefox */
+	-webkit-border-radius:7px; /* Safari, Chrome */
+	border-radius: 7px; /* CSS3 */
 	float: left;
 	margin: 0 10px 10px;
 	position: relative;
@@ -241,7 +251,11 @@ header{
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-moz-transform:    translate(-50%, -50%);
+	-o-transform:      translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform:         translate(-50%, -50%);
+
 }
 .search_header{
 	margin: 0 0 14px;
@@ -256,7 +270,9 @@ header{
 	padding-left: 11px;
 	background-color: white;
 	border: 1px solid $slider-info-color;
-	border-radius: 4px;
+	-moz-border-radius: 4px; /* Firefox */
+	-webkit-border-radius:4px; /* Safari, Chrome */
+	border-radius: 4px; /* CSS3 */
 	box-shadow: 0 1px 0 #eee;
 	color: $slider-info-color;
 }
