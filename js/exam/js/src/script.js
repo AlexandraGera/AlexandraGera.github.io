@@ -5,7 +5,6 @@ $(function() {
 		target: '+=1',
 		autostart: true
 	});
-
 	$('.jcarousel-prev').click(function(event) {
 		event.preventDefault();
 		var jcarousel= $(this).attr('href');
@@ -18,7 +17,6 @@ $(function() {
 	});
 
 //Form
-
 $('form').on('submit', function() {
 	$('.holiday-ideas_container').hide();
 	var input = $('.search_input').val();
@@ -49,5 +47,4 @@ $('form').on('submit', function() {
 	});    
 	return false;  
 }); 
-
 });
