@@ -4,18 +4,29 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
-	<title>Document</title>
-		<!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<title>URLAUBSGLÜCK</title>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/ie8.css">
+    <script>
+          document.createElement('header');
+          document.createElement('main');
+          document.createElement('section');
+          document.createElement('footer');
+        </script>
     <![endif]-->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!--[if !IE 8]>-->
     <link rel="stylesheet" href="css/style.main.min.css">
+    <!--<![endif]-->
     <link rel="stylesheet" href="css/sprites.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src='js/src/imagesloaded.pkgd.min.js'></script>
-    <!-- <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script> -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/classList.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -130,52 +141,53 @@
 </div>
 <div class="holiday-ideas">
   <h5 class="holiday-ideas_header">Discover holiday activity ideas</h5>
-  <div class="holiday-ideas_result-search clearfix"><div class="result-search_container"></div></div>
-    <div class="holiday-ideas_container clearfix">
-      <div class="holiday-ideas_item ">
-        <p class="holiday-ideas_text">Sport and Activity</p>
-      </div>
-      <div class="holiday-ideas_item">
-        <p class="holiday-ideas_text">Wellnes and Health</p>
-      </div>
-      <div class="holiday-ideas_item">
-        <p class="holiday-ideas_text">Extreme Sports<br> and Expeditions</p>
-      </div>
-      <div class="holiday-ideas_item">
-        <p class="holiday-ideas_text">Games</p>
-      </div>
-      <div class="holiday-ideas_item">
-        <p class="holiday-ideas_text">Culture and Education</p>
-      </div>
-      <div class="holiday-ideas_item">
-        <p class="holiday-ideas_text">Relaxation</p>
-      </div>
-      <div class="holiday-ideas_item">
-        <p class="holiday-ideas_text">Travelling</p>
-      </div>
-    </div>
-    <h5 class="holiday-ideas_header holiday-ideas_header-bottom">Discover holiday activity ideas</h5>
-    <form action="" class="serch serch-holiday-ideas">
-      <p class="search_header">Hi! What are your holiday interests?</p>
-      <input type="search" class="search_input" placeholder="Enter your interests">  
-      <input type="submit" class="button search_button" value="Search partners">
-    </form>
+  <div class="holiday-ideas_result-search clearfix" id="result-search">
   </div>
-  <footer>
-    <div class="footer_wrapper">
-      <p class="logo logo-footer">URLAUBSGLÜCK</p>
-      <ul class="menu menu-footer">
-        <p class="menu_header">Company</p>
-        <li class="menu_item"><a href="#" class="menu_link">About</a></li>
-        <li class="menu_item"><a href="#" class="menu_link">Contacts</a></li>
-        <li class="menu_item"><a href="#" class="menu_link">Press</a></li>
-        <li class="menu_item"><a href="#" class="menu_link">Blog</a></li>
-      </ul>
-      <a href="#" class="partners_link-footer">Partners</a>
-      <div class="copyright-footer icon-logo"></div>
+  <div class="holiday-ideas_container clearfix">
+    <div class="holiday-ideas_item holiday-ideas_item-1">
+      <p class="holiday-ideas_text">Sport and Activity</p>
     </div>
-  </footer>
+    <div class="holiday-ideas_item holiday-ideas_item-2">
+      <p class="holiday-ideas_text">Wellnes and Health</p>
+    </div>
+    <div class="holiday-ideas_item holiday-ideas_item-3">
+      <p class="holiday-ideas_text">Extreme Sports<br> and Expeditions</p>
+    </div>
+    <div class="holiday-ideas_item holiday-ideas_item-4">
+      <p class="holiday-ideas_text">Games</p>
+    </div>
+    <div class="holiday-ideas_item holiday-ideas_item-5">
+      <p class="holiday-ideas_text">Culture and Education</p>
+    </div>
+    <div class="holiday-ideas_item holiday-ideas_item-6">
+      <p class="holiday-ideas_text">Relaxation</p>
+    </div>
+    <div class="holiday-ideas_item holiday-ideas_item-7">
+      <p class="holiday-ideas_text">Travelling</p>
+    </div>
+  </div>
+  <h5 class="holiday-ideas_header holiday-ideas_header-bottom">Discover holiday activity ideas</h5>
+  <form action="" class="serch serch-holiday-ideas">
+    <p class="search_header">Hi! What are your holiday interests?</p>
+    <input type="search" class="search_input" placeholder="Enter your interests">  
+    <input type="submit" class="button search_button" value="Search partners">
+  </form>
 </div>
-<script src="js/script.main.js"></script>
+<footer>
+  <div class="footer_wrapper">
+    <p class="logo logo-footer">URLAUBSGLÜCK</p>
+    <ul class="menu menu-footer">
+      <p class="menu_header">Company</p>
+      <li class="menu_item"><a href="#" class="menu_link">About</a></li>
+      <li class="menu_item"><a href="#" class="menu_link">Contacts</a></li>
+      <li class="menu_item"><a href="#" class="menu_link">Press</a></li>
+      <li class="menu_item"><a href="#" class="menu_link">Blog</a></li>
+    </ul>
+    <a href="#" class="partners_link-footer">Partners</a>
+    <div class="copyright-footer icon-logo"></div>
+  </div>
+</footer>
+</div>
+<script src="js/script.main.min.js"></script>
 </body>
 </html>
